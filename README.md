@@ -7,7 +7,6 @@ Run YOLO models (YOLOv7, YOLOv8, YOLOv9) with NVIDIA DeepStream 7.0 and Triton I
 
 ## Features
 - Support for YOLOv7, YOLOv8, YOLOv9 detection models
-- Instance segmentation support (YOLOv7/v9 mask)
 - End-to-end TensorRT inference with EfficientNMS
 - Triton Inference Server integration via gRPC
 - Custom bounding box parser for YOLO NMS output
@@ -23,7 +22,6 @@ Run YOLO models (YOLOv7, YOLOv8, YOLOv9) with NVIDIA DeepStream 7.0 and Triton I
 ```
 deepstream-triton-yolo/
 ├── deepstream_yolo_det.txt       # Main DeepStream config for detection
-├── deepstream_yolo_mask.txt      # DeepStream config for segmentation
 ├── labels.txt                    # COCO class labels
 ├── nvdsinfer_yolo/               # Custom parser library
 │   ├── nvdsinfer_yolo.cpp
