@@ -189,6 +189,12 @@ This project builds upon the excellent work of the following developers and proj
 - [Triton Inference Server](https://github.com/triton-inference-server/server)
 - [TensorRT](https://developer.nvidia.com/tensorrt)
 
+## FAQ
+
+**Q: What Python version is required for YOLOv8 export?**
+
+A: Python 3.10 is required. See `yolov8_export_requirements.txt` for the complete list of dependencies.
+
 ## License
 Apache-2.0 License
 
