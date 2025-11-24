@@ -195,6 +195,15 @@ This project builds upon the excellent work of the following developers and proj
 
 A: Python 3.10 is required. See `yolov8_export_requirements.txt` for the complete list of dependencies.
 
+**Q: ONNX export fails with "No Previous Version of CastLike exists" error**
+
+A: This happens when using `--opset 11` with newer PyTorch/ONNX versions. The solution is to use `--opset 18` instead:
+```bash
+python3 export-det.py --weights yolov8s.pt --iou-thres 0.65 \
+    --conf-thres 0.25 --topk 100 --opset 18 --sim \
+    --input-shape 1 3 640 640 --device cuda:0
+```
+
 ## License
 Apache-2.0 License
 
